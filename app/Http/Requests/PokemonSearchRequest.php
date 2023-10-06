@@ -22,7 +22,7 @@ class PokemonSearchRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'search' => 'required|regex:/^[a-zA-Z0-9]+$/',
+            'search' => 'required|regex:/^[a-zA-Z0-9]+$/|min:3',
         ];
     }
 
@@ -30,6 +30,7 @@ class PokemonSearchRequest extends FormRequest
     {
         return [
             'search.regex' => 'The search field must contain only letters and numbers. Please try again.',
+            'search.min' => 'The search field must be at least 3 characters long.',
         ];
     }
 }
