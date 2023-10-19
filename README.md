@@ -40,7 +40,7 @@ composer global require "laravel/installer"
 ## Download proyect:
 
 ```
-git clone https://github.com/Regue95/ixpandit-test.git
+git clone https://github.com/Regue95/pokemon-finder.git
 ```
 
 ## Run proyect:
